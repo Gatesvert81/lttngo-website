@@ -1,21 +1,95 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
+
+@layer base {
+
+  html,
+  body {
+    @apply p-0 m-0 font-sans scroll-smooth
+  }
+
+  a {
+    @apply text-inherit
+  }
+
+  main,
+  section {
+    @apply w-full h-fit p-10 py-5 md:px-20 lg:px-36
+  }
+
+  h1 {
+    @apply text-5xl md:text-7xl font-semibold uppercase
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl font-semibold uppercase
+  }
+
+  h3 {
+    @apply text-3xl md:text-4xl font-semibold uppercase
+  }
+
+  h4 {
+    @apply text-2xl md:text-3xl font-semibold uppercase
+  }
+
+  h5 {
+    @apply text-xl md:text-2xl font-semibold uppercase
+  }
+
+  h6 {
+    @apply text-lg md:text-xl font-semibold uppercase
+  }
+
+  p {
+    @apply text-base md:text-sm font-medium
+  }
+
+  fieldset{
+    @apply w-full flex flex-col 
+  }
+
+  label{
+    @apply text-sm font-medium
+  }
+
+  input, textarea{
+    @apply w-full px-3 py-2 border-2 border-gray  focus:border-blue-300 focus:border-2 bg-transparent
+  }
+
 }
 
 * {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+@layer components {
+
+  .primary-btn{
+    @apply font-semibold text-base text-green underline underline-offset-2 capitalize transition duration-500 ease-in-out hover:font-bold
+  }
+
+  .secondary-btn{
+    @apply primary-btn text-light-gray
+  }
+
+  .side-nav-btn{
+    @apply text-5xl font-light uppercase text-black
+  }
+
+  .page {
+    @apply font-semibold text-green
+  }
+
+  .icon {
+    @apply w-8 h-10 relative
+  }
+
+}
+
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
@@ -23,4 +97,4 @@ a {
     color: white;
     background: black;
   }
-}
+} */
