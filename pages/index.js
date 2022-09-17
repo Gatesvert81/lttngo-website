@@ -71,7 +71,7 @@ export default function Home() {
       </section>
 
       <SectionText title="LTTNGO is a church that believes in Jesus, and a church that loves God and people.">
-        Overwhelmed by the gift of salvation we have found in Jesus, we have a heart for authentic worship, are passionate about the ocal church, and are on a mission to see God's Kingdom established across the earth.
+        Overwhelmed by the gift of salvation we have found in Jesus, we have a heart for authentic worship, are passionate about the ocal church, and are on a mission to see God&#39;s Kingdom established across the earth.
       </SectionText>
 
       <section className='flex flex-col md:grid md:grid-cols-4  gap-5' >
