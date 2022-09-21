@@ -66,7 +66,7 @@ export default function Home() {
 
       <section className='h-40vh py-0 ' >
         <div className='w-full h-full relative' >
-          <Image src="/worship.webp" layout="fill" className='object-cover' />
+          <Image src="/images/pastors/pastor-joshua-1.JPG" layout="fill" className='object-cover object-top '  />
         </div>
       </section>
 
@@ -94,7 +94,7 @@ export default function Home() {
         }
       </section>
 
-      <SectionImage title="Donation" route="/donate" btnText="Donate now">
+      <SectionImage title="Donation" route="/donate" btnText="Donate now" image="donations/donations-products.JPG" >
         Who ever is generous to the poor lends to the Lord, and He will repay him for his deed.
       </SectionImage>
 

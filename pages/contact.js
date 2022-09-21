@@ -17,7 +17,7 @@ function Contact() {
     return (
         <div className='py-16'>
             <Head>
-                <title>LTNGO | Contact</title>
+                <title>LTTNGO | Contact</title>
                 <meta name="description" content="Get in touch with us" />
                 <link rel="icon" href="/icons/logo.png" />
             </Head>
@@ -66,7 +66,7 @@ function Contact() {
                         </Button>
                     </fieldset>
                 </form>
-                <motion.div className='w-full h-40vh bg-sea-blue relative flec flex-col justify-center items-center '  >
+                <motion.div className='w-full h-40vh bg-sea-blue before:w-full before:h-full before:absolute  before:-z-10  before:content-['Loading Location'] before:top-0 before:left-0 relative flex flex-col justify-center items-center '  >
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15882.90891084092!2d-0.2156418!3d5.6072483!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6e6f1eb37da2da9d!2sAquatec%20Services%20Limited!5e0!3m2!1sen!2sgh!4v1661168994378!5m2!1sen!2sgh"
                         allowFullScreen loading="lazy" className="w-full h-full" ></iframe>
                 </motion.div>

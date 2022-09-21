@@ -57,7 +57,12 @@ function Podcasts() {
           </Button>
         </div>
       </main>
-      <section>
+      <section className="relative" >
+        <div className="w-full h-full absolute -z-10 top-0 left-0 bg-transparent flex flex-col justify-center items-center text-center">
+            <h6 className=" w-[60%] capitalize text-black transition duration-500 ease-in-out animate-pulse  " >
+                Please wait, loading Podcasts ...
+            </h6>
+        </div>
         <iframe
           className="rounded-sm"
           src="https://open.spotify.com/embed/artist/59cJa2xHGePphp15DFSI2D?utm_source=generator"
