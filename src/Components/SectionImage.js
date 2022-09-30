@@ -10,7 +10,7 @@ function SectionImage({ title, children, image, btnText, route }) {
         <Image
           src={`/images/${image}`}
           layout="fill"
-          className="object-cover object-top"
+          className="object-cover object-top md:object-center"
         />
       </div>
       <div className="w-full h-full flex flex-col absolute top-0 left-0 justify-center items-center p-10 text-center gap-5 bg-black/60 ">
