@@ -27,7 +27,7 @@ function Events() {
         },
         {
             id: 2,
-	    image: 'events/relationship-talk.JPG',
+	    image: 'events/camp-meeting.JPG',
             title: "Camp Meeting 2022",
             description: "Learn how to propery get into and maintain a sustainable relationship in life",
             theme: "Intimacy with God",
@@ -37,7 +37,7 @@ function Events() {
         },
         {
             id: 3,
-image: 'events/relationship-talk.JPG',
+image: 'events/impact-service.JPG',
             title: "Impact Service",
             description: "Learn how to propery get into and maintain a sustainable relationship in life",
             theme: "Prayer",
