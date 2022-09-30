@@ -3,15 +3,15 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import Button from './Button'
 
-function PastorCard({ name, position, children }) {
+function PastorCard({ name, position, children, image }) {
 
     const [expand, setExpand] = useState(false)
 
     return (
         <>
-            <div className='w-full h-80 cursor-pointer ' onClick={() => setExpand(!expand)} >
+            <div className='w-full h-80 pb-3 cursor-pointer  hover:shadow-xl hover:shadow-green hover:border-1 hover:border-green transition duration-500 ease-in-out ' onClick={() => setExpand(!expand)} >
                 <div className='w-full h-[60%] relative' >
-                    <Image src="/worship.webp" layout="fill" className='object-cover' />
+                    <Image src={`/images/pastors/${image}`} layout="fill" className='object-cover object-top' />
                 </div>
                 <div className='flex flex-col justify-between p-2 items-center gap-5' >
                     <div className='text-center'>
