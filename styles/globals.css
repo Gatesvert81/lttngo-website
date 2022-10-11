@@ -75,6 +75,10 @@
     @apply primary-btn text-light-gray
   }
 
+  .tetiary-btn{
+    @apply text-base text-white bg-green py-1.5 rounded-md hover:shadow hover:shadow-green transition duration-500 ease-in-out
+  }
+
   .side-nav-btn{
     @apply text-5xl font-light uppercase text-black
   }

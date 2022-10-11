@@ -1,11 +1,14 @@
-import Head from 'next/head';
-import React, { useContext, useState, useEffect } from 'react';
-import { NavContext } from '../src/Components/Context';
-import ItemCard from '../src/Components/ItemCard';
-import SectionImage from '../src/Components/SectionImage';
-import SectionText from '../src/Components/SectionText';
-import { AnimatePresence, motion } from 'framer-motion';
-import Button from '../src/Components/Button';
+import Head from "next/head";
+import React, { useContext, useState, useEffect } from "react";
+import { NavContext } from "../src/Components/Context";
+import ItemCard from "../src/Components/ItemCard";
+import SectionImage from "../src/Components/SectionImage";
+import SectionText from "../src/Components/SectionText";
+import { AnimatePresence, motion } from "framer-motion";
+import Button from "../src/Components/Button";
+import VisaForm from "../src/Components/VisaForm";
+import MomoForm from "../src/Components/MomoForm";
+import KindForm from "../src/Components/KindForm";
 
 function Donate() {
   const [donate, setDonate] = useState(null);
@@ -13,8 +16,21 @@ function Donate() {
   const [page, setPage] = useContext(NavContext);
 
   useEffect(() => {
-    if (page !== 'donate') setPage('donate');
+    if (page !== "donate") setPage("donate");
   }, []);
+
+  const donationMethod = () => {
+    switch (donate) {
+      case "visa":
+        return <VisaForm />;
+      case "momo":
+        return <MomoForm />;
+      case "kind":
+        return <KindForm />;
+      default:
+        break;
+    }
+  };
 
   return (
     <>
@@ -22,7 +38,7 @@ function Donate() {
         <Head>
           <title>LTTNGO | Donate</title>
           <meta name="description" content="Get to know more about Us" />
-          <link rel="icon" href="/icons/logo.png" />
+          <link rel="icon" href="/icons/main-logo-white.png" />
         </Head>
         <main className="flex justify-center items-center">
           <h5 className="font-bold">Donate</h5>
@@ -33,17 +49,17 @@ function Donate() {
 
         <SectionImage image="donations/donation-smile.JPG" title="NGO" />
 
-        <SectionText title="Donate">
+        <SectionText title="Donate" btnText="Donate Now">
           Help us Reach even more people and contribute into their lifes.
         </SectionText>
         <div className="w-full h-fit grid grid-cols-1 md:grid-cols-3 gap-2 px-10 md:px-20 ">
-          <ItemCard icon="visa.png" click={() => setDonate('visa')}>
+          <ItemCard icon="visa.png" click={() => setDonate("visa")}>
             Visa, Mastercard
           </ItemCard>
-          <ItemCard click={() => setDonate('mobile money')} icon="wallet.png">
+          <ItemCard click={() => setDonate("momo")} icon="wallet.png">
             Mobile Money
           </ItemCard>
-          <ItemCard click={() => setDonate('kind')} icon="parcel.png">
+          <ItemCard click={() => setDonate("kind")} icon="parcel.png">
             Donate in Kind
           </ItemCard>
         </div>
@@ -51,8 +67,7 @@ function Donate() {
       <AnimatePresence>
         {donate !== null && (
           <motion.div
-            className="'w-full h-full  backdrop-blur-md bg-white/70 rounded-md fixed z-10 top-0 left-0 p-10 "
-            onClick={() => setExpand(!expand)}
+            className="w-full h-full flex flex-col justify-center items-center backdrop-blur-md bg-white/70 rounded-md fixed z-10 top-0 left-0 p-10  "
             initial={{
               opacity: 0,
               scale: 0.95,
@@ -63,34 +78,45 @@ function Donate() {
             }}
             exit={{
               opacity: 0,
-              scale: 1.05,
+              scale: 0.95,
             }}
           >
-            <motion.div className="w-fit h-fit rounded bg-white shadow-md shadow-green ">
-              <form className="w-full grid grid-cols-1 gap-2">
-                <fieldset>
-                  <label>Full Name</label>
-                  <input type="text" placeholder="Gates Vert" />
-                </fieldset>
-                <fieldset>
-                  <label>Email</label>
-                  <input type="email" placeholder="gatesvert@gmail.com" />
-                </fieldset>
-                <fieldset>
-                  <label>Telephone Number</label>
-                  <input type="tel" placeholder="054126847" />
-                </fieldset>
-                <fieldset>
-                  <label>Message</label>
-                  <textarea
-                    type="text"
-                    placeholder="I want to give my life to Jesus Christ"
-                  />
-                </fieldset>
-                <fieldset>
-                  <Button style=" w-full primary-btn">Send Message</Button>
-                </fieldset>
-              </form>
+            <motion.div
+              data-isOpen={donate !== "visa"}
+              className="w-fit h-fit rounded bg-white shadow-md shadow-green p-5 "
+            >
+              <div className="pb-2">
+                <h4>Donation Methods</h4>
+                <div className="w-full h-fit flex justify-center gap-5 items-center ">
+                  <Button
+                    style={donate === "visa" ? "primary-btn" : "secondary-btn"}
+                    click={() => setDonate("visa")}
+                  >
+                    Visa
+                  </Button>
+                  <Button
+                    style={donate === "momo" ? "primary-btn" : "secondary-btn"}
+                    click={() => setDonate("momo")}
+                  >
+                    Mobile Money
+                  </Button>
+                  <Button
+                    style={donate === "kind" ? "primary-btn" : "secondary-btn"}
+                    click={() => setDonate("kind")}
+                  >
+                    Kind
+                  </Button>
+                </div>
+              </div>
+              <div className="w-full h-fit">{donationMethod()}</div>
+              <div className="w-full flex justify-center py-1">
+                <Button
+                  click={() => setDonate(null)}
+                  style="primary-btn text-red-400"
+                >
+                  Cancel
+                </Button>
+              </div>
             </motion.div>
           </motion.div>
         )}
@@ -100,4 +126,3 @@ function Donate() {
 }
 
 export default Donate;
-

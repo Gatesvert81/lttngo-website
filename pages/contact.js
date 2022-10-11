@@ -18,7 +18,7 @@ function Contact() {
       <Head>
         <title>LTTNGO | Contact</title>
         <meta name="description" content="Get in touch with us" />
-        <link rel="icon" href="/icons/logo.png" />
+        <link rel="icon" href="/icons/main-logo-white.png" />
       </Head>
       <main className="flex justify-center items-center">
         <h5 className="font-bold">Stay connected</h5>
@@ -35,6 +35,7 @@ function Contact() {
         title="Join our online Service"
         btnText="Join online"
         route="#contact-form"
+        image="services/online service.JPG"
       >
         Join from anywhere around the world and listen to our messages.
       </SectionImage>

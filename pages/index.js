@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useContext, useEffect } from "react";
+import upcomingEvents from "../src/assets/upcomingEvents";
 import AnchorLink from "../src/Components/AnchorLink";
 import Button from "../src/Components/Button";
 import { NavContext } from "../src/Components/Context";
@@ -15,31 +16,7 @@ export default function Home() {
     if (page !== "home") setPage("home");
   }, []);
 
-  const events = [
-    {
-      id: 1,
-      image: "events/relationship-talk.JPG",
-      title: "Relationship Summit 2022",
-      description:
-        "Learn how to propery get into and maintain a sustainable relationship in life",
-    },
-    {
-      id: 2,
-      image: "events/camp-meeting.JPG",
-      title: "Camp Meeting 2022",
-      description:
-        "Learn how to propery get into and maintain a sustainable relationship in life",
-    },
-    {
-      id: 3,
-      image: "events/impact-service.JPG",
-      title: "Impact Service",
-      description:
-        "Learn how to propery get into and maintain a sustainable relationship in life",
-    },
-  ];
-
-  return (
+   return (
     <div className="py-16">
       <Head>
         <title>LTTNGO | Home</title>
@@ -47,7 +24,7 @@ export default function Home() {
           name="description"
           content="Life to the Nations Global Outreach"
         />
-        <link rel="icon" href="/icons/logo.png" />
+        <link rel="icon" href="/icons/main-logo-white.png" />
       </Head>
 
       <main className="flex flex-col justify-center items-center gap-8 text-center">
@@ -76,10 +53,11 @@ export default function Home() {
         </div>
       </section>
 
-      <SectionText title="LTTNGO is a church that believes in Jesus, and a church that loves God and people.">
-        Overwhelmed by the gift of salvation we have found in Jesus, we have a
-        heart for authentic worship, are passionate about the ocal church, and
-        are on a mission to see God&#39;s Kingdom established across the earth.
+      <SectionText title="Our vision to the world">
+        Life To The Nations Global Outreach, popularly known as International
+        Ministers Incorporated is a non denominational, interdenominational
+        global movement geared towards impacting the nations of the world with
+        the life of Christ.
       </SectionText>
 
       <section className="flex flex-col md:grid md:grid-cols-4  gap-5">
@@ -89,7 +67,7 @@ export default function Home() {
           </h5>
           <p>Come and experience Christ in a new way.</p>
         </div>
-        {events.map((event, index) => (
+        {upcomingEvents.map((event, index) => (
           <div className="w-full " key={index}>
             <EventCard title={event.title} image={event.image} button>
               {event.description}
