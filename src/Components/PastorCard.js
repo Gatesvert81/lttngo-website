@@ -48,12 +48,12 @@ function PastorCard({ name, position, children, image }) {
                             }}
                             exit={{
                                 opacity: 0,
-                                scale: 1.05
+                                scale: 0.95
                             }}>
                             <div className='w-full self-center h-[80%] relative' >
-                                <Image src="/worship.webp" layout="fill" className='object-cover' />
+                                <Image src={`/images/pastors/${image}`} layout="fill" className='object-cover' />
                             </div>
-                            <div className='w-full h-full flex flex-col justify-center text-center p-5' >
+                            <div className='w-full h-full flex flex-col justify-center text-base text-center p-5' >
                                 <p>
                                     {children}
                                 </p>

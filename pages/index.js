@@ -30,10 +30,10 @@ export default function Home() {
       <main className="flex flex-col justify-center items-center gap-8 text-center">
         <div className="w-full h-full flex  justify-center items-center gap-5">
           <h6 className="text-sm">Accra, Gh</h6>
-          <h6 className="text-sm">2020</h6>
+          <h6 className="text-sm">2022</h6>
           <h6 className="text-sm">2nd June</h6>
         </div>
-        <h2 className="font-bold text-5xl ">KING OF GLORY</h2>
+        <h2 className="font-bold text-5xl ">Our Year of Open heavens</h2>
         <p>
           You cannot touch on the greatness of God without His glory
           manifesting. This is your time.

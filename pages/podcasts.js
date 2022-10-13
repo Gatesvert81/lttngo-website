@@ -71,11 +71,11 @@ function Podcasts() {
         </AnchorLink>
 
         <AnchorLink
-          route="https://www.youtube.com/c/LIFETOTHENATIONSGLOBALOUTREACH"
+          route="https://t.me/lttn_global"
           pass
           target
         >
-          <ItemCard icon="apple-music.png">Thelttngopodcast</ItemCard>
+          <ItemCard icon="tg.png">Lttngo WorldHub</ItemCard>
         </AnchorLink>
               </div>
     </div>

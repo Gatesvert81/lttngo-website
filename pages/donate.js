@@ -49,9 +49,14 @@ function Donate() {
 
         <SectionImage image="donations/donation-smile.JPG" title="NGO" />
 
-        <SectionText title="Donate" btnText="Donate Now">
+        <SectionText title="Donate">
           Help us Reach even more people and contribute into their lifes.
         </SectionText>
+        <div className="w-full flex pb-3 justify-center  " >
+          <Button style="primary-btn" click={() => setDonate("visa") } >
+            Donate Now
+          </Button>
+        </div>
         <div className="w-full h-fit grid grid-cols-1 md:grid-cols-3 gap-2 px-10 md:px-20 ">
           <ItemCard icon="visa.png" click={() => setDonate("visa")}>
             Visa, Mastercard
