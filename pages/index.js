@@ -16,8 +16,8 @@ export default function Home() {
     if (page !== "home") setPage("home");
   }, []);
 
-   return (
-    <div className="py-16">
+  return (
+    <div className="">
       <Head>
         <title>LTTNGO | Home</title>
         <meta
@@ -27,31 +27,19 @@ export default function Home() {
         <link rel="icon" href="/icons/main-logo-white.png" />
       </Head>
 
-      <main className="flex flex-col justify-center items-center gap-8 text-center">
-        <div className="w-full h-full flex  justify-center items-center gap-5">
-          <h6 className="text-sm">Accra, Gh</h6>
-          <h6 className="text-sm">2022</h6>
-          <h6 className="text-sm">2nd June</h6>
+      <main className="h-screen bg-[url('/images/pastors/pastor-joshua-1.JPG')] bg-norepeat bg-cover bg-center p-0">
+        <div className="w-full h-full bg-black/25 flex flex-col justify-center items-center text-white text-center gap-5 ">
+          <div>
+            <h2>our year of open heavens.</h2>
+            <p className="medium-text">love. serve. grow</p>
+          </div>
+          <div>
+            <p className="medium-text">Tuesdays</p>
+            <p className="medium-text">7:00 PM | 9:00 PM</p>
+            <Button style="primary-btn">Watch our live tuesday service</Button>
+          </div>
         </div>
-        <h2 className="font-bold text-5xl ">Our Year of Open heavens</h2>
-        <p>
-          You cannot touch on the greatness of God without His glory
-          manifesting. This is your time.
-        </p>
-        <AnchorLink route="/contact">
-          <Button style="primary-btn">Join us</Button>
-        </AnchorLink>
       </main>
-
-      <section className="h-40vh py-0 ">
-        <div className="w-full h-full relative">
-          <Image
-            src="/images/pastors/pastor-joshua-1.JPG"
-            layout="fill"
-            className="object-cover object-top "
-          />
-        </div>
-      </section>
 
       <SectionText title="Our vision to the world">
         Life To The Nations Global Outreach, popularly known as International
@@ -59,21 +47,45 @@ export default function Home() {
         global movement geared towards impacting the nations of the world with
         the life of Christ.
       </SectionText>
+      <SectionImage
+        title="LTTNGO Channel"
+        route="https://www.youtube.com/c/LIFETOTHENATIONSGLOBALOUTREACH"
+        btnText="Watch Free"
+        image="services/service-channel.JPG"
+      >
+        You ALL ACCESS PASS to everything that is happening in LTTNGO around the
+        globe!
+      </SectionImage>
 
-      <section className="flex flex-col md:grid md:grid-cols-4  gap-5">
-        <div className="flex flex-col md:py-5 gap-1 md:justify-between md:border-r-[1px] ">
+      <section className="flex flex-col text-center justify-center items-center gap-5">
+        <div>
           <h5 className="capitalize text-green md:text-">
             Conferences &amp; Events
           </h5>
           <p>Come and experience Christ in a new way.</p>
         </div>
-        {upcomingEvents.map((event, index) => (
-          <div className="w-full " key={index}>
-            <EventCard title={event.title} image={event.image} button>
-              {event.description}
-            </EventCard>
+        <div className="w-full h-[35vh] grid grid-cols-1 md:grid-cols-2">
+          <div className="w-full h-full relative">
+            <Image
+              src="/images/events/ims.jpg"
+              layout="fill"
+              className="object-cover"
+            />
           </div>
-        ))}
+          <div className=" w-full h-full flex flex-col justify-between  ">
+            <div className="text-left">
+              <h6>International Ministers Summit</h6>
+              <p className="small-text">
+                Come and hihfa biuaf bpia he diuc yu p hdf paf iu 8ef
+                fpadfshf8ef hvadf aiudbi fbaiufbs biusf aiuf aisuf aiiu fbisuf.
+              </p>
+            </div>
+            <div className="w-full grid grid-cols-2">
+              <Button style="secondary-btn">Save a seat</Button>
+              <Button style="primary-btn">All Programs</Button>
+            </div>
+          </div>
+        </div>
       </section>
 
       <SectionImage

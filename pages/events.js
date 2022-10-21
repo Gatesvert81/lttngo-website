@@ -28,7 +28,7 @@ function Events() {
       <main className="flex justify-center items-center">
         <h5 className="font-bold">Upcoming events</h5>
       </main>
-      <section className="h-50vh relative">
+      <section className="h-70vh relative">
         <div className="w-full h-full relative">
           <Image
             src={`/images/${detail?.image}`}
@@ -40,10 +40,10 @@ function Events() {
               <h4>{detail?.title}</h4>
               <h6 className="text-base capitalize">Theme: {detail?.theme}</h6>
             </div>
-            <div className="w-full flex justify-between items-center ">
-              <h6 className="text-xs">{detail?.date}</h6>
-              <h6 className="text-xs">{detail?.location}</h6>
-              <h6 className="text-xs">{detail?.time}</h6>
+            <div className="w-full flex grid grid-cols-3 ">
+              <h6 className="text-xs w-full text-left ">{detail?.date}</h6>
+              <h6 className="text-xs w-full text-center ">{detail?.location}</h6>
+              <h6 className="text-xs w-full text-right">{detail?.time}</h6>
             </div>
           </div>
         </div>

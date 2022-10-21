@@ -34,7 +34,7 @@ function About() {
         jurisdiction.
       </SectionText>
 
-      <section className="h-fit w-full grid grid-cols-1 md:grid-cols-3 gap-5">
+      <section className="h-fit w-full grid grid-cols-1 gap-5">
         <PastorCard
           name="Rev. Joshua A. Takyi"
           image="pastor-joshua-1.JPG"

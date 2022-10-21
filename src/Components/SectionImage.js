@@ -5,7 +5,7 @@ import Button from './Button';
 
 function SectionImage({ title, children, image, btnText, route }) {
   return (
-    <section className="h-30vh bg-blue-300 p-0 relative">
+    <section className="h-30vh md:h-50vh bg-blue-300 p-0 relative">
       <div className="w-full h-full relative">
         <Image
           src={`/images/${image}`}
