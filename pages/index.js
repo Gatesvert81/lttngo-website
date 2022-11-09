@@ -27,7 +27,7 @@ export default function Home() {
         <link rel="icon" href="/icons/main-logo-white.png" />
       </Head>
 
-      <main className="h-screen bg-[url('/images/pastors/pastor-joshua-1.JPG')] bg-norepeat bg-cover bg-center p-0">
+      <main className="h-screen bg-[url('/images/pastors/pastor-preaching.JPG')] bg-norepeat bg-cover bg-center p-0">
         <div className="w-full h-full bg-black/25 flex flex-col justify-center items-center text-white text-center gap-5 ">
           <div>
             <h2>our year of open heavens.</h2>
@@ -36,7 +36,13 @@ export default function Home() {
           <div>
             <p className="medium-text">Tuesdays</p>
             <p className="medium-text">7:00 PM | 9:00 PM</p>
-            <Button style="primary-btn">Watch our live tuesday service</Button>
+            <AnchorLink
+              route="https://www.youtube.com/c/LIFETOTHENATIONSGLOBALOUTREACH"
+              pass
+              target
+            >
+              <Button style="primary-btn">Watch our live tuesday service</Button>
+            </AnchorLink>
           </div>
         </div>
       </main>
@@ -49,8 +55,8 @@ export default function Home() {
       </SectionText>
       <SectionImage
         title="LTTNGO Channel"
-        route="https://www.youtube.com/c/LIFETOTHENATIONSGLOBALOUTREACH"
-        btnText="Watch Free"
+        // route="https://www.youtube.com/c/LIFETOTHENATIONSGLOBALOUTREACH"
+        // btnText="Watch Free"
         image="services/service-channel.JPG"
       >
         You ALL ACCESS PASS to everything that is happening in LTTNGO around the
