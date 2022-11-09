@@ -70,7 +70,7 @@ function Contact() {
         </form>
         <motion.div className="w-full h-40vh bg-sea-blue before:w-full before:h-full before:absolute  before:-z-10 before:top-0 before:left-0 relative flex flex-col justify-center items-center before:content['Loading Location'] ">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15882.90891084092!2d-0.2156418!3d5.6072483!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6e6f1eb37da2da9d!2sAquatec%20Services%20Limited!5e0!3m2!1sen!2sgh!4v1661168994378!5m2!1sen!2sgh"
+            src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d127051.88126240631!2d-0.24198300011831644!3d5.659320398923445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0xfdf9de510d6dd45%3A0x5fc5ebbba6c380bc!2supsa%20vice%20chancellor&#39;s%20complex!3m2!1d5.6593247!2d-0.1719742!5e0!3m2!1sen!2sgh!4v1667929554751!5m2!1sen!2sgh"
             allowFullScreen
             loading="lazy"
             className="w-full h-full"
