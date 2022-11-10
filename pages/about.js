@@ -23,7 +23,7 @@ function About() {
       <main className="flex justify-center items-center">
         <h5 className="font-bold">About</h5>
       </main>
-      <SectionText title="LTTNGO is a church that believes in Jesus, a church that loves God and people">
+      <SectionText title="LTTNGO is a commission that believes in Jesus, a church that loves God and people">
         Life to the Nations Global Outreach (LTTNGO) is a global commission
         spearheaded by Reverend Joshua Takyi with the mandate to carry the life
         of God to the nations of the world.
