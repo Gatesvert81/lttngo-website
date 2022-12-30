@@ -1,11 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useContext, useEffect } from "react";
-import upcomingEvents from "../src/assets/upcomingEvents";
-import AnchorLink from "../src/Components/AnchorLink";
 import Button from "../src/Components/Button";
 import { NavContext } from "../src/Components/Context";
-import EventCard from "../src/Components/EventCard";
 import SectionImage from "../src/Components/SectionImage";
 import SectionText from "../src/Components/SectionText";
 
@@ -64,7 +61,7 @@ export default function Home() {
           </h5>
           <p>Come and experience Christ in a new way.</p>
         </div>
-        <div className="w-full h-[35vh] grid grid-cols-1 md:grid-cols-2">
+        <div className="w-full  md:h-[35vh] grid grid-cols-1 md:grid-cols-2">
           <div className="w-full h-full relative">
             <Image
               src="/images/events/ims.jpg"
