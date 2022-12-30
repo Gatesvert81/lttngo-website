@@ -72,7 +72,7 @@
   }
 
   .secondary-btn{
-    @apply primary-btn text-light-gray
+    @apply border-white px-2 py-1 uppercase transition duration-500 ease-in-out  hover:border-green hover:shadow  hover:shadow-green text-green
   }
 
   .tetiary-btn{

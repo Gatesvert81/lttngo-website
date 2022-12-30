@@ -23,7 +23,7 @@ function About() {
       <main className="flex justify-center items-center">
         <h5 className="font-bold">About</h5>
       </main>
-      <SectionText title="LTTNGO is a church that believes in Jesus, a church that loves God and people">
+      <SectionText title="LTTNGO is a commission that believes in Jesus, a church that loves God and people">
         Life to the Nations Global Outreach (LTTNGO) is a global commission
         spearheaded by Reverend Joshua Takyi with the mandate to carry the life
         of God to the nations of the world.
@@ -47,7 +47,7 @@ function About() {
           image="Sir Kwabena.JPG"
           position="CEO"
         >
-          Stands as a selfless,committed pillar of the commission and a great aide to the man of God, Pastor Joshua Takyi. Sir Kwabena is the founder of Living Epistles Fellowship which has the mandate to raise Kingdom emissaries in every field of life. He is passionate about raising leaders who will shape the thoughts that will regulate the coming centuries. Being a keen student of finance, he established Aspiron which is a firm targeted at championing financial data and its dissemination across all levels. Coming from a solid Christian foundation, his passion and love for the things of God is almost enviable if not adored. Sir Kwabena serves as the Chief Executive Officer of the Life To The Nations Global Outreach. Under his auspices, he oversees the church&#39;s overall operations, directs agendas and supervises all strategies and the church&#39;s organisational structure. Since he took hold of office, the church and the work within has seen a tremendous quality of being outstanding; a true mark of an exemplary leader.
+          Stands as a selfless,committed pillar of the commission and a great aide to the man of God, Pastor Joshua Takyi. Sir Kwabena is the founder of Living Epistles Fellowship which has the mandate to raise Kingdom emissaries in every field of life.  Being a keen student of finance, he established Aspiron which is a firm targeted at championing financial data and its dissemination across all levels. Coming from a solid Christian foundation, his passion and love for the things of God is almost enviable if not adored. Sir Kwabena serves as the Chief Executive Officer of the Life To The Nations Global Outreach. Under his auspices, he oversees the church&#39;s overall operations, directs agendas and supervises all strategies and the church&#39;s organisational structure. Since he took hold of office, the church and the work within has seen a tremendous quality of being outstanding; a true mark of an exemplary leader.
         </PastorCard>
         <PastorCard
           name="Sir Paul Kwame Dzeha"

@@ -58,7 +58,6 @@ function Navigation() {
           <AnchorLink route="/">
             <Button
               style={`side-nav-btn ${page === "home" ? "page" : null} `}
-              click={() => handleNav("home")}
             >
               Home
             </Button>

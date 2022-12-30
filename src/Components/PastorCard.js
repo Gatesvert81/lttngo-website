@@ -5,7 +5,7 @@ import Button from "./Button";
 function PastorCard({ name, position, children, image }) {
   return (
     <div className="w-full min-h-[60vh] grid grid-cols-1 md:grid-cols-2  ">
-      <div className="w-full self-center h-full relative">
+      <div className="w-full self-center h-[35vh] md:h-full relative">
         <Image
           src={`/images/pastors/${image}`}
           layout="fill"
