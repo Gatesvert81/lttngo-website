@@ -55,7 +55,7 @@ function Contact() {
           </fieldset>
           <fieldset>
             <label>Telephone Number</label>
-            <input type="tel" placeholder="054126847" />
+            <input type="tel" placeholder="0507242212" />
           </fieldset>
           <fieldset>
             <label>Message</label>
