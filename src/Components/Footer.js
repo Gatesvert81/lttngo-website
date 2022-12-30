@@ -9,7 +9,7 @@ function Footer() {
       <div className="flex flex-col gap-5">
         <h4>Life to the nations global outreach</h4>
         <p className="flex flex-col gap-2">
-          <span>(+233) 59 2458 215</span>
+          <span>(+233) 50 724 2212</span>
           <span>info@lttngo.com</span>
         </p>
         <p className="flex flex-col gap-2">
