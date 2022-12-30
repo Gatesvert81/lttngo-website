@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useContext, useEffect } from "react";
+import AnchorLink from "../src/Components/AnchorLink";
 import Button from "../src/Components/Button";
 import { NavContext } from "../src/Components/Context";
 import SectionImage from "../src/Components/SectionImage";
